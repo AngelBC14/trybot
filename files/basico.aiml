@@ -57,5 +57,19 @@
       <template>Entendido. Si desea algo mas escriba "OYE"</template>
       <that>De postre tenemos galletas, ¿quieres</that>
   </category>
+  <category>
+      <pattern>OYE</pattern>
+      <template>¿Desea algo mas?</template>
+  </category>
+  <category>
+      <pattern>SI</pattern>
+      <template>Que desea ordenar?</template>
+      <that>¿Desea algo mas</that>
+  </category>
+  <category>
+      <pattern>NO</pattern>
+      <template>Estamos a sus ordenes</template>
+      <that>¿Desea algo mas</that>
+  </category>
 </aiml>
 
