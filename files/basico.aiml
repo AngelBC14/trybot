@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>HOLA</pattern>
+    <template>
+        <random>
+            <li>Bienvenid@. ¿Quieres saber cuales son las entradas o vamos a la sopa?</li> 
+            <li>Buen dia ¿toma entrada o empieza con la sopa?</li>
+            <li>Sea bienvenido. ¿le digo las entradas o pasamos a la sopa?</li>
+            <li>Muy buen dia ¿quiere saber las entradas o elige la sopa de una vez?</li>
+        </random>
+    </template>
+  </category>
+  <category>
+    <pattern>ENTRADAS</pattern>
+    <template>Tenemos palitos de apio, ensalada o fruta picada</template>
+  </category>
+  <category>
+    <pattern>SOPA</pattern>
+    <template>Quieres sopa del dia o consome?</template>
+  </category>
+    <category>
+    <pattern>* ENTRADAS</pattern>
+    <template>
+        <srai>ENTRADAS</srai>
+    </template>
+  </category>
+  <category>
+      <pattern> LA * ESTA FRIA</pattern>
+      <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+  </category>
+  <category>
+      <pattern>* POSTRE</pattern>
+      <template>De postre tenemos galletas, ¿quieres?</template>
+  </category>
+  <category>
+      <pattern>SI</pattern>
+      <template>En un momento le traigo sus galletas</template>
+      <that>De postre tenemos galletas, ¿quieres</that>
+  </category>
+  <category>
+      <pattern>NO</pattern>
+      <template>Entendido. Si desea algo mas escriba "OYE"</template>
+      <that>De postre tenemos galletas, ¿quieres</that>
+  </category>
+</aiml>
+
