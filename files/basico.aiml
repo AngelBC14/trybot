@@ -16,8 +16,18 @@
     <template>Tenemos palitos de apio, ensalada o fruta picada</template>
   </category>
   <category>
-    <pattern>SOPA</pattern>
-    <template>Quieres sopa del dia o consome?</template>
+    <pattern>* SOPA</pattern>
+    <template>¿Quieres sopa del dia o consome?</template>
+  </category>
+  <category>
+      <pattern>SOPA DEL DIA</pattern>
+      <template>Entendido, en un momento le traigo su sopa del dia</template>
+      <that>¿Quieres sopa del dia o consome</that>
+  </category>
+  <category>
+      <pattern>CONSOME</pattern>
+      <template>Entendido, en un momento le traigo su consome</template>
+      <that>¿Quieres sopa del dia o consome</that>
   </category>
     <category>
     <pattern>* ENTRADAS</pattern>
@@ -27,6 +37,10 @@
   </category>
   <category>
       <pattern> LA * ESTA FRIA</pattern>
+      <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+  </category>
+  <category>
+      <pattern> EL * ESTA FRIO</pattern>
       <template>Una enorme disculpa, llevo su <star/> a calentar</template>
   </category>
   <category>
